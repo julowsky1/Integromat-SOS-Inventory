@@ -1,0 +1,19 @@
+{
+    "url": "https://api.sosinventory.com/api/{{parameters.url}}",
+    "method": "{{parameters.method}}",
+    "qs": {
+        "{{...}}": "{{toCollection(parameters.qs, 'key', 'value')}}"
+    },
+    "body": "{{parameters.body}}",
+    "type": "text",
+    "response": {
+        "output": {
+            "Headers": "{{headers}}",
+            "body": "{{body}}",
+            "Status Code": "{{code}}",
+            "error": {
+                "message": "[{{statusCode}}] {{body.message}} (error code: {{code}})"
+            }
+        }
+    }
+}

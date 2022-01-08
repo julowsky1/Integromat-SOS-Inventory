@@ -1,0 +1,134 @@
+{
+    "id": 123,
+    "starred": 0,
+    "syncToken": 0,
+    "name": "Widget14",
+    "fullname": "'1/4' solid aluminum widget",
+    "description": "Widget used in capacitor assemblies",
+    "sku": "4878932",
+    "barcode": "811234000007",
+    "type": "Inventory Item",
+    "url": "https://www.mycompany.com/products/4878932",
+    "tags": "Aluminum, Non-returnable",
+    "notes": "Transportation customers only",
+    "purchaseDescription": "'1/4' solid aluminum widget",
+    "vendorPartNumber": "WID14905",
+    "customerPartNumber": null,
+    "vendor": {
+        "id": 23,
+        "name": "Widget Master"
+    },
+    "bin": "A19",
+    "warranty": "Standard",
+    "category": {
+        "id": 8,
+        "name": "Machine parts"
+    },
+    "class": {
+        "id": 17,
+        "name": "Industrial"
+    },
+    "incomeAccount": {
+        "id": 20,
+        "name": "Product Sales"
+    },
+    "cogsAccount": {
+        "id": 4,
+        "name": "Cost of Sales"
+    },
+    "assetAccount": {
+        "id": 21,
+        "name": "Inventory"
+    },
+    "expenseAccount": null,
+    "onhand": 11,
+    "available": 6,
+    "onSO": 5,
+    "onSR": 0,
+    "rented": 0,
+    "onWO": -5,
+    "onPO": 0,
+    "onRMA": 0,
+    "reorderPoint": 0,
+    "maxStock": 1200,
+    "leadTime": 7,
+    "salesPrice": 24.3,
+    "baseSalesPrice": 24.3,
+    "markupPercent": null,
+    "useMarkup": false,
+    "minimumPrice": 21,
+    "purchaseCost": 11.61,
+    "basePurchaseCost": 11.61,
+    "costBasis": 11.71,
+    "weight": 2.511,
+    "volume": 0.108,
+    "weightunit": "oz",
+    "volumeunit": "cbm",
+    "sublevel": null,
+    "taxable": true,
+    "salesTaxCode": null,
+    "purchaseTaxCode": null,
+    "willSync": true,
+    "updateShopify": false,
+    "updateBigCommerce": false,
+    "alwaysShippable": false,
+    "hasImage": false,
+    "serialTracking": false,
+    "lotTracking": false,
+    "archived": false,
+    "showOnSalesForms": true,
+    "showOnPurchasingForms": true,
+    "showOnManufacturingForms": true,
+    "lastSync": "2019-10-22T00:00:00",
+    "syncMessage": "",
+    "customFields": [
+        {
+            "id": 5,
+            "name": "available in colors",
+            "value": "false",
+            "dataType": "Boolean"
+        },
+        {
+            "id": 23,
+            "name": "color",
+            "value": "green",
+            "dataType": "List"
+        }
+    ],
+    "uoms": [
+        {
+            "uom": {
+                "id": 5,
+                "name": "box"
+            },
+            "conversion": 3,
+            "isBase": false,
+            "salesPrice": null,
+            "purchaseCost": 140
+        },
+        {
+            "uom": {
+                "id": 1,
+                "name": "Ea"
+            },
+            "conversion": 1,
+            "isBase": true,
+            "salesPrice": null,
+            "purchaseCost": 45
+        }
+    ],
+    "priceTiers": [
+        {
+            "priceTier": {
+                "id": "35",
+                "name": "$1 Discount"
+            },
+            "price": "50.00000",
+            "quantity": "10.00000",
+            "percentDiscount": "0.00000"
+        }
+    ],
+    "summaryOnly": false,
+    "imageAsBase64String": null,
+    "imageChanged": false
+}

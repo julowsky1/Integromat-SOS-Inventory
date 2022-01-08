@@ -1,0 +1,8 @@
+{
+    "name": "Lot",
+    "label": "List Lots Old",
+    "description": "Lists all lots optionally filtered by status (expired, recalled, notexpirednotrecalled), archived (yes/no), or location.",
+    "connection": "sos-inventory-940033",
+    "webhook": null,
+    "type": "action"
+}

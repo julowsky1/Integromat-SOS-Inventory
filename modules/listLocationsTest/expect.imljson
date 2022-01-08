@@ -1,0 +1,9 @@
+[
+    {
+        "name": "limit",
+        "label": "Limit",
+        "type": "uinteger",
+        "help": "Number of locations to return",
+        "default": 10
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "url": "/api/v2/item",
+    "method": "GET",
+    "qs": {
+        "tags": "{{parameters.tags}}",
+        "location": "{{parameters.location}}",
+        "type": "{{parameters.type}}"
+    },
+    "body": {},
+    "headers": {},
+    "response": {
+        "error": {
+            "message": "[{{statusCode}}] {{body.error.message}} (error code: {{body.error.code}})"
+        },
+        "limit": "{{parameters.limit}}",
+        "output": "{{parseLastSync(item)}}",
+        "iterate": "{{body.data}}"
+    }
+}

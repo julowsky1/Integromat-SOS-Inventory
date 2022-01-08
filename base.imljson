@@ -1,0 +1,21 @@
+{
+    "baseUrl": "https://api.sosinventory.com",
+    "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Host": "api.sosinventory.com",
+        "Authorization": "Bearer {{connection.accessToken}}"
+    },
+    "response": {
+        "error": {
+            "429": {
+                "message": "Too Many Requests. Please issue requests less frequently than 500ms."
+            },
+            "message": "[{{statusCode}}] {{body.message}} (error code: {{body.status}})"
+        }
+    },
+    "log": {
+        "sanitize": [
+            "request.headers.authorization"
+        ]
+    }
+}

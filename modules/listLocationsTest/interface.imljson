@@ -1,0 +1,151 @@
+[
+    {
+        "name": "count",
+        "type": "uinteger",
+        "label": "# Locations Returned"
+    },
+    {
+        "name": "totalCount",
+        "type": "uinteger",
+        "label": "# Matching Locations"
+    },
+    {
+        "name": "id",
+        "label": "Location ID",
+        "help": "Unique identifier for this record.",
+        "type": "uinteger"
+    },
+    {
+        "name": "syncToken",
+        "label": "syncToken",
+        "help": "Indicates the current version of this record.",
+        "type": "uinteger"
+    },
+    {
+        "name": "name",
+        "label": "Location Name",
+        "help": "The location name.",
+        "type": "text"
+    },
+    {
+        "name": "binTracking",
+        "label": "Bin Tracking",
+        "help": "True if location is bin tracked, false if not.",
+        "type": "boolean"
+    },
+    {
+        "name": "bins",
+        "spec": [
+            {
+                "name": "id",
+                "type": "uinteger",
+                "label": "ID"
+            },
+            {
+                "name": "syncToken",
+                "type": "uinteger",
+                "label": "syncToken"
+            },
+            {
+                "name": "number",
+                "type": "text",
+                "label": "Bin Number"
+            },
+            {
+                "name": "location",
+                "type": "text",
+                "label": "Location"
+            },
+            {
+                "name": "sortOrder",
+                "type": "uinteger",
+                "label": "sortOrder"
+            }
+        ],
+        "label": "Bins",
+        "help": "The bins setup for this location, if bin tracking is enabled.",
+        "type": "array"
+    },
+    {
+        "name": "address",
+        "type": "collection",
+        "label": "Address",
+        "spec": [
+            {
+                "name": "line1",
+                "type": "text",
+                "label": "line1"
+            },
+            {
+                "name": "line2",
+                "type": "text",
+                "label": "line2"
+            },
+            {
+                "name": "line3",
+                "type": "text",
+                "label": "line3"
+            },
+            {
+                "name": "line4",
+                "type": "text",
+                "label": "line4"
+            },
+            {
+                "name": "line5",
+                "type": "text",
+                "label": "line5"
+            },
+            {
+                "name": "city",
+                "type": "text",
+                "label": "City"
+            },
+            {
+                "name": "stateProvince",
+                "type": "text",
+                "label": "State/Province"
+            },
+            {
+                "name": "postalCode",
+                "type": "text",
+                "label": "Postal Code"
+            },
+            {
+                "name": "country",
+                "type": "text",
+                "label": "Country"
+            }
+        ]
+    },
+    {
+        "name": "phone",
+        "type": "text",
+        "label": "Phone"
+    },
+    {
+        "name": "email",
+        "type": "text",
+        "label": "Email"
+    },
+    {
+        "name": "company",
+        "type": "text",
+        "label": "Company"
+    },
+    {
+        "name": "contact",
+        "type": "text",
+        "label": "Contact"
+    },
+    {
+        "name": "status",
+        "type": "text",
+        "label": "Query Status"
+    },
+    {
+        "name": "message",
+        "type": "text",
+        "label": "Message"
+    }
+]

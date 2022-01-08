@@ -1,0 +1,51 @@
+[
+    {
+        "name": "location",
+        "type": "text",
+        "label": "Location",
+        "required": false
+    },
+    {
+        "name": "archived",
+        "type": "select",
+        "label": "Archived",
+        "options": [
+            {
+                "label": "Yes",
+                "value": "yes"
+            },
+            {
+                "label": "No",
+                "value": "no"
+            }
+        ],
+        "required": false
+    },
+    {
+        "name": "status",
+        "type": "select",
+        "label": "Status",
+        "options": [
+            {
+                "label": "Expired",
+                "value": "expired"
+            },
+            {
+                "label": "Recalled",
+                "value": "recalled"
+            },
+            {
+                "label": "Not Expired or Recalled",
+                "value": "notexpirednotrecalled"
+            }
+        ],
+        "required": false
+    },
+    {
+        "name": "limit",
+        "label": "Limit",
+        "type": "uinteger",
+        "help": "Maximum lots to return.",
+        "default": 1
+    }
+]

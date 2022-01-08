@@ -1,0 +1,74 @@
+{
+    "authorize": {
+        "qs": {
+            "client_id": "{{ifempty(parameters.clientId, common.clientId)}}",
+            "redirect_uri": "{{oauth.redirectUri}}",
+            "response_type": "code"
+        },
+        "url": "https://api.sosinventory.com/oauth2/authorize",
+        "response": {
+            "error": {
+                "message": "[{{query.code}}] {{query.message}} (error code: {{query.code}})"
+            },
+            "temp": {
+                "code": "{{query.code}}"
+            }
+        }
+    },
+    "token": {
+        "url": "https://api.sosinventory.com/oauth2/token",
+        "method": "POST",
+        "body": {
+            "code": "{{temp.code}}",
+            "client_id": "{{ifempty(parameters.clientId, common.clientId)}}",
+            "grant_type": "authorization_code",
+            "redirect_uri": "{{oauth.redirectUri}}",
+            "client_secret": "{{ifempty(parameters.clientSecret, common.clientSecret)}}"
+        },
+        "type": "urlencoded",
+        "response": {
+            "data": {
+                "expires": "{{addSeconds(now, body.expires_in)}}",
+                "accessToken": "{{body.access_token}}",
+                "refreshToken": "{{body.refresh_token}}"
+            },
+            "expires": "{{addSeconds(now, body.refresh_expires_in)}}"
+        },
+        "log": {
+            "sanitize": [
+                "request.body.code",
+                "request.body.client_secret",
+                "response.body.access_token",
+                "response.body.refresh_token"
+            ]
+        }
+    },
+    "refresh": {
+        "condition": "{{data.expires < addMinutes(now, 15)}}",
+        "url": "https://api.sosinventory.com/oauth2/token",
+        "method": "POST",
+        "body": {
+            "client_id": "{{ifempty(parameters.clientId, common.clientId)}}",
+            "grant_type": "refresh_token",
+            "client_secret": "{{ifempty(parameters.clientSecret, common.clientSecret)}}",
+            "refresh_token": "{{data.refreshToken}}"
+        },
+        "type": "urlencoded",
+        "response": {
+            "data": {
+                "expires_in": "{{addSeconds(now, body.expires_in)}}",
+                "access_token": "{{body.access_token}}",
+                "refresh_token": "{{body.refresh_token}}"
+            },
+            "expires": "{{addSeconds(now, body.refresh_expires_in)}}"
+        },
+        "log": {
+            "sanitize": [
+                "request.body.client_secret",
+                "request.body.refresh_token",
+                "response.body.access_token",
+                "response.body.refresh_token"
+            ]
+        }
+    }
+}

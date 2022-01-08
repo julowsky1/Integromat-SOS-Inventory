@@ -1,0 +1,19 @@
+{
+    "url": "/api/v2/lot",
+    "method": "GET",
+    "qs": {
+        "location": "{{parameters.location}}",
+        "archived": "{{parameters.archived}}",
+        "status": "{{parameters.status}}"
+    },
+    "body": {},
+    "headers": {},
+    "response": {
+        "error": {
+            "message": "[{{statusCode}}] {{body.error.message}} (error code: {{body.error.code}})"
+        },
+        "limit": "{{parameters.limit}}",
+        "output": "{{parseExpiration(item)}}",
+        "iterate": "{{body.data}}"
+    }
+}

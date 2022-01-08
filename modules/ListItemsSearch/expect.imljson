@@ -1,0 +1,38 @@
+[
+    {
+        "name": "location",
+        "type": "text",
+        "label": "Location",
+        "required": false
+    },
+    {
+        "name": "tags",
+        "type": "text",
+        "label": "Tags",
+        "required": false
+    },
+    {
+        "name": "type",
+        "type": "select",
+        "label": "Type",
+        "options": [
+            {
+                "label": "Inventory Item",
+                "value": "Inventory Item"
+            },
+            {
+                "label": "Assembly",
+                "value": "Assembly"
+            }
+        ],
+        "required": false,
+        "multiple": false
+    },
+    {
+        "name": "limit",
+        "label": "Limit",
+        "type": "uinteger",
+        "help": "Maximum items to return.",
+        "default": 1
+    }
+]

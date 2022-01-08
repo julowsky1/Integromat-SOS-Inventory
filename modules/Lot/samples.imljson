@@ -1,0 +1,25 @@
+{
+    "id": 123,
+    "syncToken": 0,
+    "starred": 0,
+    "number": "988CP2382019",
+    "item": {
+        "id": 64,
+        "name": "Widget, 1/4"
+    },
+    "description": "Lot for Widgets",
+    "expiration": "2020-05-08T09:13:00",
+    "recalled": false,
+    "expired": false,
+    "customFields": [
+        {
+            "id": 5,
+            "name": "Checkbox",
+            "value": "false",
+            "dataType": "Boolean"
+        }
+    ],
+    "onhand": 15,
+    "available": 20,
+    "summaryOnly": false
+}

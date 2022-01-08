@@ -1,0 +1,26 @@
+{
+    "id": 7,
+    "syncToken": 0,
+    "name": "XYZ Warehouse",
+    "binTracking": false,
+    "bins": [],
+    "address": {
+        "line1": "",
+        "line2": "",
+        "line3": null,
+        "line4": null,
+        "line5": null,
+        "city": "",
+        "stateProvince": "",
+        "postalCode": "",
+        "country": ""
+    },
+    "phone": "",
+    "email": "",
+    "company": "Amazon",
+    "contact": "Jeff Bezos",
+    "keys": null,
+    "values": null,
+    "__IMTLENGTH__": 9,
+    "__IMTINDEX__": 1
+}

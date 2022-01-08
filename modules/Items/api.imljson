@@ -1,0 +1,17 @@
+{
+    "url": "/api/v2/item",
+    "method": "GET",
+    "qs": {
+        "tags": "{{parameters.tags}}",
+        "location": "{{parameters.location}}",
+        "type": "{{parameters.type}}"
+    },
+    "body": {},
+    "response": {
+        "limit": "{{parameters.limit}}",
+        "error": {
+            "message": "[{{statusCode}}] {{body.error.message}} (error code: {{body.error.code}})"
+        },
+        "output": "{{body}}"
+    }
+}

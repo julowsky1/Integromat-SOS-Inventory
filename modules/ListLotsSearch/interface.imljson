@@ -1,0 +1,124 @@
+[
+    {
+        "name": "count",
+        "type": "uinteger",
+        "label": "# Lots Returned"
+    },
+    {
+        "name": "totalCount",
+        "type": "uinteger",
+        "label": "# Matching Lots"
+    },
+    {
+        "name": "id",
+        "type": "uinteger",
+        "label": "Lot ID"
+    },
+    {
+        "name": "starred",
+        "type": "uinteger",
+        "label": "Starred"
+    },
+    {
+        "name": "syncToken",
+        "label": "syncToken",
+        "type": "uinteger"
+    },
+    {
+        "name": "number",
+        "type": "uinteger",
+        "label": "Lot Number"
+    },
+    {
+        "name": "item",
+        "type": "collection",
+        "label": "Associated Item",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Associated Item ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Associated Item Name"
+            }
+        ]
+    },
+    {
+        "name": "description",
+        "type": "text",
+        "label": "Lot Description"
+    },
+    {
+        "name": "expiration",
+        "type": "date",
+        "label": "Expiration Date"
+    },
+    {
+        "name": "recalled",
+        "type": "boolean",
+        "label": "recalled"
+    },
+    {
+        "name": "expired",
+        "type": "boolean",
+        "label": "expired"
+    },
+    {
+        "name": "customFields",
+        "type": "array",
+        "label": "Custom Fields",
+        "spec": {
+            "type": "collection",
+            "spec": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "label": "ID"
+                },
+                {
+                    "name": "name",
+                    "type": "text",
+                    "label": "Name"
+                },
+                {
+                    "name": "value",
+                    "type": "text",
+                    "label": "Value"
+                },
+                {
+                    "name": "dataType",
+                    "type": "text",
+                    "label": "Data Type"
+                }
+            ]
+        }
+    },
+    {
+        "name": "onhand",
+        "type": "number",
+        "label": "On Hand"
+    },
+    {
+        "name": "available",
+        "type": "number",
+        "label": "Available"
+    },
+    {
+        "name": "summaryOnly",
+        "type": "boolean",
+        "label": "Summary Only"
+    },
+    {
+        "name": "status",
+        "type": "text",
+        "label": "Query Status"
+    },
+    {
+        "name": "message",
+        "type": "text",
+        "label": "Message"
+    }
+]

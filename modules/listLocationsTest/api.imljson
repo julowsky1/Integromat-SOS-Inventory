@@ -1,0 +1,12 @@
+{
+    "url": "/api/v2/location",
+    "method": "GET",
+    "qs": {},
+    "body": {},
+    "headers": {},
+    "response": {
+        "limit": "{{parameters.limit}}",
+        "output": "{{item}}",
+        "iterate": "{{body.data}}"
+    }
+}

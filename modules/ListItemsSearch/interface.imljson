@@ -1,0 +1,548 @@
+[
+    {
+        "name": "count",
+        "type": "uinteger",
+        "label": "# Items Returned"
+    },
+    {
+        "name": "totalCount",
+        "type": "uinteger",
+        "label": "# Matching Items"
+    },
+    {
+        "name": "id",
+        "type": "uinteger",
+        "label": "Item ID"
+    },
+    {
+        "name": "starred",
+        "type": "uinteger",
+        "label": "Starred"
+    },
+    {
+        "name": "syncToken",
+        "type": "number",
+        "label": "syncToken"
+    },
+    {
+        "name": "name",
+        "type": "text",
+        "label": "Item Name"
+    },
+    {
+        "name": "fullname",
+        "type": "text",
+        "label": "Item Full Name"
+    },
+    {
+        "name": "description",
+        "type": "text",
+        "label": "Item Description"
+    },
+    {
+        "name": "sku",
+        "type": "text",
+        "label": "SKU"
+    },
+    {
+        "name": "barcode",
+        "type": "text",
+        "label": "Barcode"
+    },
+    {
+        "name": "type",
+        "type": "text",
+        "label": "Item Type"
+    },
+    {
+        "name": "url",
+        "type": "text",
+        "label": "URL"
+    },
+    {
+        "name": "tags",
+        "type": "text",
+        "label": "Tags"
+    },
+    {
+        "name": "notes",
+        "type": "text",
+        "label": "Notes"
+    },
+    {
+        "name": "purchaseDescription",
+        "type": "text",
+        "label": "Description for PO"
+    },
+    {
+        "name": "vendorPartNumber",
+        "type": "text",
+        "label": "Vendor Part Number"
+    },
+    {
+        "name": "customerPartNumber",
+        "type": "text",
+        "label": "Customer Part Number"
+    },
+    {
+        "name": "vendor",
+        "type": "collection",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Vendor ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Vendor Name"
+            }
+        ],
+        "label": "Vendor"
+    },
+    {
+        "name": "bin",
+        "type": "text",
+        "label": "Bin Storage Location"
+    },
+    {
+        "name": "warranty",
+        "type": "text",
+        "label": "Warranty"
+    },
+    {
+        "name": "category",
+        "type": "collection",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Category ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Category Name"
+            }
+        ],
+        "label": "Item Category"
+    },
+    {
+        "name": "class",
+        "type": "collection",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Class ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Class Name"
+            }
+        ],
+        "label": "Class"
+    },
+    {
+        "name": "incomeAccount",
+        "type": "collection",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Income Account ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Income Account Name"
+            }
+        ],
+        "label": "Income Account"
+    },
+    {
+        "name": "cogsAccount",
+        "type": "collection",
+        "label": "COGS Account",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "COGS Account ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "COGS Account Name"
+            }
+        ]
+    },
+    {
+        "name": "assetAccount",
+        "type": "collection",
+        "label": "Asset Account",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Asset Account ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Asset Account Name"
+            }
+        ]
+    },
+    {
+        "name": "expenseAccount",
+        "type": "text",
+        "label": "Expense Account"
+    },
+    {
+        "name": "onhand",
+        "type": "number",
+        "label": "On Hand"
+    },
+    {
+        "name": "available",
+        "type": "number",
+        "label": "Available for Sale"
+    },
+    {
+        "name": "onSO",
+        "type": "number",
+        "label": "On Sales Order"
+    },
+    {
+        "name": "onSR",
+        "type": "number",
+        "label": "On Sales Receipt"
+    },
+    {
+        "name": "rented",
+        "type": "number",
+        "label": "Rented"
+    },
+    {
+        "name": "onWO",
+        "type": "number",
+        "label": "On Work Order"
+    },
+    {
+        "name": "onPO",
+        "type": "number",
+        "label": "On Purchase Order"
+    },
+    {
+        "name": "onRMA",
+        "type": "number",
+        "label": "On RMA"
+    },
+    {
+        "name": "reorderPoint",
+        "type": "number",
+        "label": "Reorder Point"
+    },
+    {
+        "name": "maxStock",
+        "type": "number",
+        "label": "Maximum Stock"
+    },
+    {
+        "name": "leadTime",
+        "type": "number",
+        "label": "Lead Time"
+    },
+    {
+        "name": "salesPrice",
+        "type": "number",
+        "label": "Sales Price"
+    },
+    {
+        "name": "baseSalesPrice",
+        "type": "number",
+        "label": "Base Sales Price"
+    },
+    {
+        "name": "markupPercent",
+        "type": "text",
+        "label": "Markup Percent"
+    },
+    {
+        "name": "useMarkup",
+        "type": "boolean",
+        "label": "Use Markup"
+    },
+    {
+        "name": "minimumPrice",
+        "type": "number",
+        "label": "Minimum Sales Price"
+    },
+    {
+        "name": "purchaseCost",
+        "type": "number",
+        "label": "Purchase Cost, Including Default Vendor Pricing"
+    },
+    {
+        "name": "basePurchaseCost",
+        "type": "number",
+        "label": "Base Purchase Cost"
+    },
+    {
+        "name": "costBasis",
+        "type": "number",
+        "label": "Cost of Current Stock"
+    },
+    {
+        "name": "weight",
+        "type": "number",
+        "label": "Weight"
+    },
+    {
+        "name": "volume",
+        "type": "number",
+        "label": "Volume"
+    },
+    {
+        "name": "weightunit",
+        "type": "text",
+        "label": "Weight Units"
+    },
+    {
+        "name": "volumeunit",
+        "type": "text",
+        "label": "Voume Units (cbm)"
+    },
+    {
+        "name": "sublevel",
+        "type": "text",
+        "label": "Number of Levels Between This Item and Highest Level Item"
+    },
+    {
+        "name": "taxable",
+        "type": "boolean",
+        "label": "Taxable"
+    },
+    {
+        "name": "salesTaxCode",
+        "type": "text",
+        "label": "Default Sales Tax Code (Non-US Only)"
+    },
+    {
+        "name": "purchaseTaxCode",
+        "type": "text",
+        "label": "Purchase Tax Code (Non-US Only)"
+    },
+    {
+        "name": "willSync",
+        "type": "boolean",
+        "label": "Sync Item With External Accounting System"
+    },
+    {
+        "name": "updateShopify",
+        "type": "boolean",
+        "label": "Sync to Shopify"
+    },
+    {
+        "name": "updateBigCommerce",
+        "type": "boolean",
+        "label": "Sync to Big Commerce"
+    },
+    {
+        "name": "alwaysShippable",
+        "type": "boolean",
+        "label": "Show on Shipments"
+    },
+    {
+        "name": "hasImage",
+        "type": "boolean",
+        "label": "Image Available"
+    },
+    {
+        "name": "serialTracking",
+        "type": "boolean",
+        "label": "Serial Numbers Used"
+    },
+    {
+        "name": "lotTracking",
+        "type": "boolean",
+        "label": "Lots Used"
+    },
+    {
+        "name": "archived",
+        "type": "boolean",
+        "label": "Archived"
+    },
+    {
+        "name": "showOnSalesForms",
+        "type": "boolean",
+        "label": "Show On Sales Forms"
+    },
+    {
+        "name": "showOnPurchasingForms",
+        "type": "boolean",
+        "label": "Show On Purchasing Forms"
+    },
+    {
+        "name": "showOnManufacturingForms",
+        "type": "boolean",
+        "label": "Show On Manufacturing Forms"
+    },
+    {
+        "name": "lastSync",
+        "type": "date",
+        "label": "Last Sync Date"
+    },
+    {
+        "name": "syncMessage",
+        "type": "text",
+        "label": "Sync Message"
+    },
+    {
+        "name": "customFields",
+        "type": "array",
+        "label": "Custom Fields",
+        "spec": {
+            "type": "collection",
+            "spec": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "label": "ID"
+                },
+                {
+                    "name": "name",
+                    "type": "text",
+                    "label": "Name"
+                },
+                {
+                    "name": "value",
+                    "type": "text",
+                    "label": "Value"
+                },
+                {
+                    "name": "dataType",
+                    "type": "text",
+                    "label": "Data Type"
+                }
+            ]
+        }
+    },
+    {
+        "name": "uoms",
+        "type": "array",
+        "label": "Units of Measure",
+        "spec": {
+            "type": "collection",
+            "spec": [
+                {
+                    "name": "uom",
+                    "type": "collection",
+                    "label": "Unit of Measure",
+                    "spec": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "label": "ID"
+                        },
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name"
+                        }
+                    ]
+                },
+                {
+                    "name": "conversion",
+                    "type": "number",
+                    "label": "Conversion to Base"
+                },
+                {
+                    "name": "isBase",
+                    "type": "boolean",
+                    "label": "Is Base Unit"
+                },
+                {
+                    "name": "salesPrice",
+                    "type": "text",
+                    "label": "Sales Price"
+                },
+                {
+                    "name": "purchaseCost",
+                    "type": "number",
+                    "label": "Purchase Cost"
+                }
+            ]
+        }
+    },
+    {
+        "name": "priceTiers",
+        "type": "array",
+        "label": "Price Tiers",
+        "spec": {
+            "type": "collection",
+            "spec": [
+                {
+                    "name": "priceTier",
+                    "type": "collection",
+                    "label": "Price Tier",
+                    "spec": [
+                        {
+                            "name": "id",
+                            "type": "text",
+                            "label": "ID"
+                        },
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Name"
+                        }
+                    ]
+                },
+                {
+                    "name": "price",
+                    "type": "text",
+                    "label": "Price"
+                },
+                {
+                    "name": "quantity",
+                    "type": "text",
+                    "label": "Quantity"
+                },
+                {
+                    "name": "percentDiscount",
+                    "type": "text",
+                    "label": "Percent Discount"
+                }
+            ]
+        }
+    },
+    {
+        "name": "summaryOnly",
+        "type": "boolean",
+        "label": "Summary Only"
+    },
+    {
+        "name": "imageAsBase64String",
+        "type": "text",
+        "label": "Binary Image in Base64"
+    },
+    {
+        "name": "imageChanged",
+        "type": "boolean",
+        "label": "Image Changed"
+    },
+    {
+        "name": "status",
+        "type": "text",
+        "label": "Query Status"
+    },
+    {
+        "name": "message",
+        "type": "text",
+        "label": "Message"
+    }
+]
