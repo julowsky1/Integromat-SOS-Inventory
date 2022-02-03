@@ -2,7 +2,7 @@
     "name": "Items",
     "label": "List Items Old",
     "description": "Lists items optionally filtered by location, tags, and type (Inventory Item, Assembly, etc).",
-    "connection": "sos-inventory-940033",
+    "connection": "sos-inventory",
     "webhook": null,
     "type": "action"
 }

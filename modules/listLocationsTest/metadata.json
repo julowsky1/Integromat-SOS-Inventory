@@ -2,7 +2,7 @@
     "name": "listLocationsTest",
     "label": "List Locations",
     "description": "Lists locations.",
-    "connection": "sos-inventory-940033",
+    "connection": "sos-inventory",
     "webhook": null,
     "type": "search"
 }

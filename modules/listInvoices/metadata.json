@@ -1,0 +1,8 @@
+{
+    "name": "listInvoices",
+    "label": "List Invoices",
+    "description": "Lists invoices.",
+    "connection": "sos-inventory",
+    "webhook": null,
+    "type": "search"
+}

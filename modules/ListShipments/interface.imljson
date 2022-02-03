@@ -1,0 +1,568 @@
+[
+    {
+        "name": "count",
+        "type": "uinteger",
+        "label": "# Lots Returned"
+    },
+    {
+        "name": "totalCount",
+        "type": "uinteger",
+        "label": "# Matching Lots"
+    },
+    {
+        "name": "id",
+        "type": "uinteger",
+        "label": "Lot ID"
+    },
+    {
+        "name": "starred",
+        "type": "uinteger",
+        "label": "Starred"
+    },
+    {
+        "name": "syncToken",
+        "label": "syncToken",
+        "type": "uinteger"
+    },
+    {
+        "name": "number",
+        "type": "uinteger",
+        "label": "Order Number"
+    },
+    {
+        "name": "date",
+        "type": "date",
+        "label": "Transaction Date"
+    },
+    {
+        "name": "customer",
+        "type": "collection",
+        "label": "Customer",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Customer ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Customer Name"
+            }
+        ]
+    },
+    {
+        "name": "location",
+        "type": "collection",
+        "label": "Location",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Location ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Location Name"
+            }
+        ]
+    },
+    {
+        "name": "billing",
+        "type": "collection",
+        "label": "Billing Address",
+        "spec": [
+            {
+                "name": "company",
+                "type": "text",
+                "label": "Company"
+            },
+            {
+                "name": "contact",
+                "type": "text",
+                "label": "Contact"
+            },
+            {
+                "name": "phone",
+                "type": "text",
+                "label": "Phone"
+            },
+            {
+                "name": "email",
+                "type": "text",
+                "label": "Email"
+            },
+            {
+                "name": "addressName",
+                "type": "text",
+                "label": "Address Name"
+            },
+            {
+                "name": "addressType",
+                "type": "text",
+                "label": "Address Type"
+            },
+            {
+                "name": "address",
+                "type": "collection",
+                "spec": [
+                    {
+                        "name": "line1",
+                        "type": "text",
+                        "label": "line1"
+                    },
+                    {
+                        "name": "line2",
+                        "type": "text",
+                        "label": "line2"
+                    },
+                    {
+                        "name": "line3",
+                        "type": "text",
+                        "label": "line3"
+                    },
+                    {
+                        "name": "line4",
+                        "type": "text",
+                        "label": "line4"
+                    },
+                    {
+                        "name": "line5",
+                        "type": "text",
+                        "label": "line5"
+                    },
+                    {
+                        "name": "city",
+                        "type": "text",
+                        "label": "City"
+                    },
+                    {
+                        "name": "stateProvince",
+                        "type": "text",
+                        "label": "State/Province"
+                    },
+                    {
+                        "name": "postalCode",
+                        "type": "text",
+                        "label": "Postal Code"
+                    },
+                    {
+                        "name": "country",
+                        "type": "text",
+                        "label": "Country"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "shipping",
+        "type": "collection",
+        "label": "Shipping Address",
+        "spec": [
+            {
+                "name": "company",
+                "type": "text",
+                "label": "Company"
+            },
+            {
+                "name": "contact",
+                "type": "text",
+                "label": "Contact"
+            },
+            {
+                "name": "phone",
+                "type": "text",
+                "label": "Phone"
+            },
+            {
+                "name": "email",
+                "type": "text",
+                "label": "Email"
+            },
+            {
+                "name": "addressName",
+                "type": "text",
+                "label": "Address Name"
+            },
+            {
+                "name": "addressType",
+                "type": "text",
+                "label": "Address Type"
+            },
+            {
+                "name": "address",
+                "type": "collection",
+                "spec": [
+                    {
+                        "name": "line1",
+                        "type": "text",
+                        "label": "line1"
+                    },
+                    {
+                        "name": "line2",
+                        "type": "text",
+                        "label": "line2"
+                    },
+                    {
+                        "name": "line3",
+                        "type": "text",
+                        "label": "line3"
+                    },
+                    {
+                        "name": "line4",
+                        "type": "text",
+                        "label": "line4"
+                    },
+                    {
+                        "name": "line5",
+                        "type": "text",
+                        "label": "line5"
+                    },
+                    {
+                        "name": "city",
+                        "type": "text",
+                        "label": "City"
+                    },
+                    {
+                        "name": "stateProvince",
+                        "type": "text",
+                        "label": "State/Province"
+                    },
+                    {
+                        "name": "postalCode",
+                        "type": "text",
+                        "label": "Postal Code"
+                    },
+                    {
+                        "name": "country",
+                        "type": "text",
+                        "label": "Country"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "channel",
+        "type": "collection",
+        "label": "Channel",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Channel ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Channel"
+            }
+        ]
+    },
+    {
+        "name": "department",
+        "type": "text",
+        "label": "Department"
+    },
+    {
+        "name": "priority",
+        "type": "text",
+        "label": "Priority"
+    },
+    {
+        "name": "assignedToUser",
+        "type": "text",
+        "label": "Assigned to User"
+    },
+    {
+        "name": "shippingMethod",
+        "type": "text",
+        "label": "Shipping Method"
+    },
+    {
+        "name": "orderStage",
+        "type": "text",
+        "label": "Order Stage"
+    },
+    {
+        "name": "taxCode",
+        "type": "collection",
+        "spec": [
+            {
+                "name": "id",
+                "type": "number",
+                "label": "Tax Code ID"
+            },
+            {
+                "name": "name",
+                "type": "text",
+                "label": "Tax Code Name"
+            }
+        ]
+    },
+    {
+        "name": "linkedTransaction",
+        "type": "text",
+        "label": "Linked Transaction"
+    },
+    {
+        "name": "customerMessage",
+        "type": "text",
+        "label": "Customer Message"
+    },
+    {
+        "name": "comment",
+        "type": "text",
+        "label": "Internal Comment"
+    },
+    {
+        "name": "customerNotes",
+        "type": "text"
+    },
+    {
+        "name": "customFields",
+        "type": "array",
+        "label": "Custom Fields",
+        "spec": {
+            "type": "collection",
+            "spec": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "label": "Custom Field ID"
+                },
+                {
+                    "name": "name",
+                    "type": "text",
+                    "label": "Custom Field Name"
+                },
+                {
+                    "name": "value",
+                    "type": "text",
+                    "label": "Custom Field Value"
+                },
+                {
+                    "name": "dataType",
+                    "type": "text",
+                    "label": "Custom Field Data Type"
+                }
+            ]
+        }
+    },
+    {
+        "name": "customerPO",
+        "type": "text",
+        "label": "Purchase Order"
+    },
+    {
+        "name": "shipBy",
+        "type": "date",
+        "label": "Ship By Date"
+    },
+    {
+        "name": "shippingAmount",
+        "type": "number",
+        "label": "Shipping Amount"
+    },
+    {
+        "name": "total",
+        "type": "number",
+        "label": "Order Total"
+    },
+    {
+        "name": "forceToShipStation",
+        "type": "boolean",
+        "label": "Force to Shipstation"
+    },
+    {
+        "name": "archived",
+        "type": "boolean",
+        "label": "Archived"
+    },
+    {
+        "name": "summaryOnly",
+        "type": "boolean",
+        "label": "Summary Only"
+    },
+    {
+        "name": "trackingLink",
+        "type": "text",
+        "label": "Tracking Link"
+    },
+    {
+        "name": "lines",
+        "type": "array",
+        "label": "Order Lines",
+        "spec": {
+            "type": "collection",
+            "spec": [
+                {
+                    "name": "id",
+                    "type": "uinteger",
+                    "label": "Shipment line ID"
+                },
+                {
+                    "name": "lineNumber",
+                    "type": "uinteger",
+                    "label": "Line Number on Shipment"
+                },
+                {
+                    "name": "item",
+                    "type": "collection",
+                    "label": "Item",
+                    "spec": [
+                        {
+                            "name": "id",
+                            "type": "number",
+                            "label": "Item ID"
+                        },
+                        {
+                            "name": "name",
+                            "type": "text",
+                            "label": "Item Name"
+                        }
+                    ]
+                },
+                {
+                    "name": "class",
+                    "type": "text",
+                    "label": "Class"
+                },
+                {
+                    "name": "job",
+                    "type": "text",
+                    "label": "Job"
+                },
+                {
+                    "name": "workcenter",
+                    "type": "text",
+                    "label": "Work Center"
+                },
+                {
+                    "name": "tax",
+                    "type": "collection",
+                    "label": "Tax",
+                    "spec": [
+                        {
+                            "name": "taxable",
+                            "type": "boolean",
+                            "label": "Taxable"
+                        },
+                        {
+                            "name": "taxCode",
+                            "type": "text",
+                            "label": "Tax Code"
+                        }
+                    ]
+                },
+                {
+                    "name": "linkedTransaction",
+                    "type": "text",
+                    "label": "Linked Transaction"
+                },
+                {
+                    "name": "description",
+                    "type": "text",
+                    "label": "Item Description"
+                },
+                {
+                    "name": "quantity",
+                    "type": "number",
+                    "label": "Item Quantity"
+                },
+                {
+                    "name": "weight",
+                    "type": "number",
+                    "label": "Item Weight"
+                },
+                {
+                    "name": "volume",
+                    "type": "number",
+                    "label": "Item Volume"
+                },
+                {
+                    "name": "weightunit",
+                    "type": "text",
+                    "label": "Unit for Item's Weight"
+                },
+                {
+                    "name": "volumeunit",
+                    "type": "text",
+                    "label": "Unit for Item's Volume"
+                },
+                {
+                    "name": "unitprice",
+                    "type": "number",
+                    "label": "Unit Price"
+                },
+                {
+                    "name": "amount",
+                    "type": "number",
+                    "label": "Sales Amunt for Line Item"
+                },
+                {
+                    "name": "picked",
+                    "type": "number",
+                    "label": "Number of Items Picked"
+                },
+                {
+                    "name": "shipped",
+                    "type": "number",
+                    "label": "Number of Items Shipped"
+                },
+                {
+                    "name": "invoiced",
+                    "type": "number",
+                    "label": "Number of Items Invoiced"
+                },
+                {
+                    "name": "cost",
+                    "type": "number",
+                    "label": "Cost For This Line"
+                },
+                {
+                    "name": "margin",
+                    "type": "number",
+                    "label": "Margin For This Line"
+                },
+                {
+                    "name": "listprice",
+                    "type": "number",
+                    "label": "List Price for this Item"
+                },
+                {
+                    "name": "percentdiscount",
+                    "type": "number",
+                    "label": "Percent Discount for Line"
+                },
+                {
+                    "name": "bin",
+                    "type": "text",
+                    "label": "Bin where Item is Located"
+                },
+                {
+                    "name": "lot",
+                    "type": "text",
+                    "label": "Lot to which this item belongs"
+                }
+            ]
+        }
+    },
+    {
+        "name": "summaryOnly",
+        "type": "boolean",
+        "label": "Summary Only"
+    },
+    {
+        "name": "status",
+        "type": "text",
+        "label": "Query Status"
+    },
+    {
+        "name": "message",
+        "type": "text",
+        "label": "Message"
+    }
+]

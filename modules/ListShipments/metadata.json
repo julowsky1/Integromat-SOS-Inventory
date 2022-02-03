@@ -1,0 +1,8 @@
+{
+    "name": "ListShipments",
+    "label": "List Shipments",
+    "description": "Lists shipments.",
+    "connection": "sos-inventory",
+    "webhook": null,
+    "type": "search"
+}

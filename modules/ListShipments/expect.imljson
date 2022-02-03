@@ -1,0 +1,67 @@
+[
+    {
+        "name": "start",
+        "type": "uinteger",
+        "label": "Start",
+        "advanced": true,
+        "help": "A cursor used in pagination.",
+        "required": false
+    },
+    {
+        "name": "limit",
+        "label": "Limit",
+        "type": "uinteger",
+        "help": "Maximum shipments to return. Must be less than 200",
+        "default": 10
+    },
+    {
+        "name": "search",
+        "type": "text",
+        "advanced": true,
+        "label": "Search",
+        "required": false
+    },
+    {
+        "name": "archived",
+        "type": "boolean",
+        "advanced": true,
+        "label": "Archived",
+        "options": [
+            {
+                "label": "Yes",
+                "value": "yes"
+            },
+            {
+                "label": "No",
+                "value": "no"
+            }
+        ],
+        "required": false
+    },
+    {
+        "name": "from",
+        "type": "date",
+        "label": "From Date",
+        "required": false
+    },
+    {
+        "name": "to",
+        "type": "date",
+        "label": "To Date",
+        "required": false
+    },
+    {
+        "name": "location",
+        "type": "text",
+        "advanced": true,
+        "label": "Location",
+        "required": false
+    },
+    {
+        "name": "customerId",
+        "advanced": true,
+        "type": "uinteger",
+        "label": "Customer ID",
+        "required": false
+    }
+]

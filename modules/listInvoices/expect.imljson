@@ -1,0 +1,70 @@
+[
+    {
+        "name": "start",
+        "type": "uinteger",
+        "label": "Start",
+        "advanced": true,
+        "help": "A cursor used in pagination.",
+        "required": false
+    },
+    {
+        "name": "limit",
+        "label": "Limit",
+        "type": "uinteger",
+        "help": "Maximum orders to return. Must be less than 200",
+        "default": 10
+    },
+    {
+        "name": "status",
+        "type": "select",
+        "advanced": true,
+        "label": "Status",
+        "options": [
+            {
+                "label": "Open",
+                "value": "open"
+            },
+            {
+                "label": "Closed",
+                "value": "closed"
+            }
+        ],
+        "required": false
+    },
+    {
+        "name": "search",
+        "type": "text",
+        "advanced": true,
+        "label": "Search",
+        "required": false
+    },
+    {
+        "name": "archived",
+        "type": "boolean",
+        "advanced": true,
+        "label": "Archived",
+        "options": [
+            {
+                "label": "Yes",
+                "value": "yes"
+            },
+            {
+                "label": "No",
+                "value": "no"
+            }
+        ],
+        "required": false
+    },
+    {
+        "name": "from",
+        "type": "date",
+        "label": "From Date",
+        "required": false
+    },
+    {
+        "name": "to",
+        "type": "date",
+        "label": "To Date",
+        "required": false
+    }
+]

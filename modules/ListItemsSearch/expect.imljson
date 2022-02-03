@@ -33,6 +33,6 @@
         "label": "Limit",
         "type": "uinteger",
         "help": "Maximum items to return.",
-        "default": 1
+        "default": 10
     }
 ]

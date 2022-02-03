@@ -46,6 +46,6 @@
         "label": "Limit",
         "type": "uinteger",
         "help": "Maximum lots to return.",
-        "default": 1
+        "default": 10
     }
 ]

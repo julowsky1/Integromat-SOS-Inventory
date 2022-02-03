@@ -1,0 +1,8 @@
+{
+    "name": "listSalesOrders",
+    "label": "List Sales Orders",
+    "description": "List Sales Orders",
+    "connection": "sos-inventory",
+    "webhook": null,
+    "type": "search"
+}

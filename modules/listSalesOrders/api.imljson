@@ -1,0 +1,25 @@
+{
+    "url": "/api/v2/salesorder",
+    "method": "GET",
+    "qs": {
+        "start": "{{parameters.start}}",
+        "maxresults": "{{parameters.limit}}",
+        "status": "{{parameters.status}}",
+        "query": "{{parameters.search}}",
+        "archived": "{{parameters.archived}}",
+        "from": "{{formatDate(parameters.from,YYYY-MM-DDTHH:mm:ss)}}",
+        "to": "{{formatDate(parameters.to,YYYY-MM-DDTHH:mm:ss)}}",
+        "location": "{{parameters.location}}",
+        "channel": "{{parameters.channel}}"
+    },
+    "body": {},
+    "headers": {},
+    "response": {
+        "error": {
+            "message": "[{{statusCode}}] {{body.error.message}} (error code: {{body.error.code}})"
+        },
+        "limit": "{{parameters.limit}}",
+        "output": "{{parseOrder(item)}}",
+        "iterate": "{{body.data}}"
+    }
+}

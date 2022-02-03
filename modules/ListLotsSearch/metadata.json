@@ -2,7 +2,7 @@
     "name": "ListLotsSearch",
     "label": "List Lots",
     "description": "Lists all lots optionally filtered by status, archived, location.",
-    "connection": "sos-inventory-940033",
+    "connection": "sos-inventory",
     "webhook": null,
     "type": "search"
 }

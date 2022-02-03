@@ -2,7 +2,7 @@
     "name": "ListItemsSearch",
     "label": "List Items",
     "description": "Lists all items optionally filtered by location, type, and tags.",
-    "connection": "sos-inventory-940033",
+    "connection": "sos-inventory",
     "webhook": null,
     "type": "search"
 }
